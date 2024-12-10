@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Changed background color to black */
+    color: #fff; /* Changed text color to white for better readability */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #444;
+    padding: 10px;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Container Class */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Flex Row for Layouts */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Mobile Styles (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    nav {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Styles (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    header, footer {
+        text-align: center;
+    }
+}
+
+/* Desktop Styles (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+    nav {
+        font-size: 16px;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
