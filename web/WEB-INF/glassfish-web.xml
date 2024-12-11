@@ -1,0 +1,7 @@
+<glassfish-web-app>
+    <context-root>/RestaurantReservation</context-root>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <virtual-server>server</virtual-server>
+</glassfish-web-app>
